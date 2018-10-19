@@ -12,9 +12,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void testMethod(){
-        int test = 0;
+        int test = 2137 ;
 
         //test comment
-        int nowe = 0;
+        int nowe = 50;
     }
 }
