@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">BeaconSuite</string>
+    <string name="EstimoteLegacySDK_BeaconScanning_title">EstimoteLegacySDK_BeaconScanning</string>
+    <string name="EstimoteLegacySDK_BeaconScanning_button_off">Skanuj</string>
+    <string name="EstimoteLegacySDK_BeaconScanning_button_on">Zatrzymaj</string>
+    <string name="GoogleCloud_BeaconRegistration_title">GoogleCloud_BeaconRegistration</string>
+    <string name="GoogleCloud_BeaconUseCase_title">GoogleCloud_BeaconUseCase</string>
+    <string name="EstimoteLegacySDK_BeaconConfiguration_title">EstimoteLegacySDK_BeaconConfiguration</string>
 </resources>
