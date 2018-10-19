@@ -10,11 +10,4 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
-    private void testMethod(){
-        int test = 2137 ;
-
-        //test comment
-        int nowe = 50;
-    }
 }
