@@ -15,5 +15,6 @@ public class MainActivity extends AppCompatActivity {
         int test = 0;
 
         //test comment
+        int nowe = 0;
     }
 }
