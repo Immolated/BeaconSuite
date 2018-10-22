@@ -6,4 +6,5 @@
     <string name="GoogleCloud_BeaconRegistration_title">GoogleCloud_BeaconRegistration</string>
     <string name="GoogleCloud_BeaconUseCase_title">GoogleCloud_BeaconUseCase</string>
     <string name="EstimoteLegacySDK_BeaconConfiguration_title">EstimoteLegacySDK_BeaconConfiguration</string>
+    <string name="testListText">uhh</string>
 </resources>
