@@ -1,6 +1,8 @@
 package pl.psnc.labiot.beaconsuite;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.res.Resources;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -72,6 +74,12 @@ public class ListViewCustomAdapter extends BaseAdapter{
             @Override
             public void onClick(View v) {
                 //TODO: zaimplementować wybór elementu
+                if(modelList.get(position).getTitle().equals("Beacon registration")){
+                    //start appropriate activity
+                    Intent intent = new Intent(mContext, GoogleCloud_BeaconRegistration.class);
+                    //intent.putExtra("actionBarTitle", String.valueOf(R.string.MainMenu_Title1));
+                    mContext.startActivity(intent);
+                }
             }
         });
 

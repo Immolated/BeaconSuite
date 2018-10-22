@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
         //assign values
         ICONS = new int[]{R.drawable.eddystone, R.drawable.eddystone, R.drawable.estimote, R.drawable.estimote};
-        TITLES = new String[]{"Google Cloud beacon registration", "Google Cloud beacon use cases", "Estimote SDK beacon configuration", "Estimote SDK beacon use case"};
-        DESCRIPTIONS = new String[]{"Register a beacon with your Google account", "See an example use case for Google Proximity Beacon API", "Configure Estimote beacon", "See an example use case for Estimote legacy SDK"};
+        TITLES = new String[]{getString(R.string.MainMenu_Title1), getString(R.string.MainMenu_Title2), getString(R.string.MainMenu_Title3), getString(R.string.MainMenu_Title4)};
+        DESCRIPTIONS = new String[]{getString(R.string.MainMenu_Description1),getString(R.string.MainMenu_Description2),getString(R.string.MainMenu_Description3),getString(R.string.MainMenu_Description4)};
 
         listView = findViewById(R.id.listView);
 
