@@ -3,7 +3,7 @@ package pl.psnc.labiot.beaconsuite;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class EstimoteLegacySDK_BeaconScanning extends AppCompatActivity {
+public class EstimoteLegacySDK_BeaconUseCase extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

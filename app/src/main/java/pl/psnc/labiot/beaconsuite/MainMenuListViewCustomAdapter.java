@@ -2,7 +2,6 @@ package pl.psnc.labiot.beaconsuite;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,11 +12,11 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListViewCustomAdapter extends BaseAdapter{
+public class MainMenuListViewCustomAdapter extends BaseAdapter{
     private Context mContext;
     private LayoutInflater inflater;
-    private List<ListViewItemModel> modelList;
-    private ArrayList<ListViewItemModel> arrayList;
+    private List<MainMenuListViewItemModel> modelList;
+    private ArrayList<MainMenuListViewItemModel> arrayList;
 
     public class ViewHolder{
         TextView title, description;
@@ -25,7 +24,7 @@ public class ListViewCustomAdapter extends BaseAdapter{
     }
 
     //constructor
-    public ListViewCustomAdapter(Context mContext, List<ListViewItemModel> modelList) {
+    public MainMenuListViewCustomAdapter(Context mContext, List<MainMenuListViewItemModel> modelList) {
         this.mContext   = mContext;
         this.modelList  = modelList;
         this.inflater   = LayoutInflater.from(this.mContext);
@@ -72,10 +71,24 @@ public class ListViewCustomAdapter extends BaseAdapter{
 
         view.setOnClickListener(v -> {
             //TODO: zaimplementować wybór elementu
-            if(modelList.get(position).getTitle().equals(App.getContext().getResources().getString(R.string.MainMenu_Title1))){
+            if(modelList.get(position).getTitle().equals(mContext.getResources().getString(R.string.MainMenu_Title1))){
                 //start appropriate activity
                 Intent intent = new Intent(mContext, GoogleCloud_BeaconRegistration.class);
-                //intent.putExtra("actionBarTitle", String.valueOf(R.string.MainMenu_Title1));
+                mContext.startActivity(intent);
+            }
+            if(modelList.get(position).getTitle().equals(mContext.getResources().getString(R.string.MainMenu_Title2))){
+                //start appropriate activity
+                Intent intent = new Intent(mContext, GoogleCloud_BeaconUseCase.class);
+                mContext.startActivity(intent);
+            }
+            if(modelList.get(position).getTitle().equals(mContext.getResources().getString(R.string.MainMenu_Title3))){
+                //start appropriate activity
+                Intent intent = new Intent(mContext, EstimoteLegacySDK_BeaconConfiguration.class);
+                mContext.startActivity(intent);
+            }
+            if(modelList.get(position).getTitle().equals(mContext.getResources().getString(R.string.MainMenu_Title4))){
+                //start appropriate activity
+                Intent intent = new Intent(mContext, EstimoteLegacySDK_BeaconUseCase.class);
                 mContext.startActivity(intent);
             }
         });

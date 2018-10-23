@@ -8,12 +8,12 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private ListView listView;
-    private ListViewCustomAdapter adapter;
+    private MainMenuListViewCustomAdapter adapter;
     private int[] ICONS;
     private String[]  TITLES;
     private String[]  DESCRIPTIONS ;
 
-    private ArrayList<ListViewItemModel> arrayList = new ArrayList<ListViewItemModel>();
+    private ArrayList<MainMenuListViewItemModel> arrayList = new ArrayList<MainMenuListViewItemModel>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,12 +28,12 @@ public class MainActivity extends AppCompatActivity {
         listView = findViewById(R.id.listView);
 
         for(int i = 0; i < TITLES.length; i++){
-            ListViewItemModel model = new ListViewItemModel(TITLES[i],DESCRIPTIONS[i],ICONS[i]);
+            MainMenuListViewItemModel model = new MainMenuListViewItemModel(TITLES[i],DESCRIPTIONS[i],ICONS[i]);
             arrayList.add(model);
         }
 
         //pass results to listViewAdapter
-        adapter = new ListViewCustomAdapter(this,arrayList);
+        adapter = new MainMenuListViewCustomAdapter(this,arrayList);
         //bind the adapter to the listview
         listView.setAdapter(adapter);
     }

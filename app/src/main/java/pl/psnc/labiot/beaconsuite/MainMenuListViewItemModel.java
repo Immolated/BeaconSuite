@@ -1,12 +1,12 @@
 package pl.psnc.labiot.beaconsuite;
 
-public class ListViewItemModel {
+public class MainMenuListViewItemModel {
     private String title;
     private String description;
     private int icon;
 
     //constructor
-    public ListViewItemModel(String title, String description, int icon) {
+    public MainMenuListViewItemModel(String title, String description, int icon) {
         this.title = title;
         this.description = description;
         this.icon = icon;

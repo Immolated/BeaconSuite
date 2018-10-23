@@ -8,22 +8,33 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/icon_suite"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:name=".App">
+        android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EstimoteLegacySDK_BeaconScanning"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".GoogleCloud_BeaconRegistration"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".EstimoteLegacySDK_BeaconConfiguration"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".GoogleCloud_BeaconUseCase"
-            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".GoogleCloud_BeaconRegistration"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/MainMenu_Title1"
+            android:icon="@drawable/eddystone"/>
+        <activity
+            android:name=".GoogleCloud_BeaconUseCase"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/MainMenu_Title2"
+            android:icon="@drawable/eddystone"/>
+        <activity
+            android:name=".EstimoteLegacySDK_BeaconConfiguration"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/MainMenu_Title3"
+            android:icon="@drawable/estimote"/>
+        <activity
+            android:name=".EstimoteLegacySDK_BeaconUseCase"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/MainMenu_Title4"
+            android:icon="@drawable/estimote"/>
     </application>
 
 </manifest>

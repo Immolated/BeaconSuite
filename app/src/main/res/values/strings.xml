@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BeaconSuite</string>
+    <string name="app_name">Beacon Suite</string>
     <string name="EstimoteLegacySDK_BeaconScanning_title">EstimoteLegacySDK_BeaconScanning</string>
     <string name="EstimoteLegacySDK_BeaconScanning_button_off">Skanuj</string>
     <string name="EstimoteLegacySDK_BeaconScanning_button_on">Zatrzymaj</string>
@@ -11,8 +11,8 @@
     <string name="MainMenu_Title2">Google SDK use case</string>
     <string name="MainMenu_Title3">Estimote configuration</string>
     <string name="MainMenu_Title4">Estimote SDK use case</string>
-    <string name="MainMenu_Description1">Register a beacon with your Google account using Google Cloud services</string>
+    <string name="MainMenu_Description1">Register an Eddystone beacon with your Google account using Google Cloud services</string>
     <string name="MainMenu_Description2">See an example use case for Google Proximity Beacon API (using Eddystone)</string>
     <string name="MainMenu_Description3">Configure an Estimote beacon manually</string>
-    <string name="MainMenu_Description4">See an example use case for Estimote legacy SDK</string>
+    <string name="MainMenu_Description4">See an example use case for Estimote legacy SDK (using iBeacon)</string>
 </resources>
