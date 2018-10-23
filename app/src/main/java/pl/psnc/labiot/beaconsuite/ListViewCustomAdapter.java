@@ -29,7 +29,7 @@ public class ListViewCustomAdapter extends BaseAdapter{
         this.mContext   = mContext;
         this.modelList  = modelList;
         this.inflater   = LayoutInflater.from(this.mContext);
-        this.arrayList  = new ArrayList<ListViewItemModel>();
+        this.arrayList  = new ArrayList<>();
         this.arrayList.addAll(modelList);
     }
 
@@ -70,19 +70,15 @@ public class ListViewCustomAdapter extends BaseAdapter{
         holder.description.setText(modelList.get(position).getDescription());
         holder.icon.setImageResource(modelList.get(position).getIcon());
 
-        view.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                //TODO: zaimplementować wybór elementu
-                if(modelList.get(position).getTitle().equals("Beacon registration")){
-                    //start appropriate activity
-                    Intent intent = new Intent(mContext, GoogleCloud_BeaconRegistration.class);
-                    //intent.putExtra("actionBarTitle", String.valueOf(R.string.MainMenu_Title1));
-                    mContext.startActivity(intent);
-                }
+        view.setOnClickListener(v -> {
+            //TODO: zaimplementować wybór elementu
+            if(modelList.get(position).getTitle().equals(App.getContext().getResources().getString(R.string.MainMenu_Title1))){
+                //start appropriate activity
+                Intent intent = new Intent(mContext, GoogleCloud_BeaconRegistration.class);
+                //intent.putExtra("actionBarTitle", String.valueOf(R.string.MainMenu_Title1));
+                mContext.startActivity(intent);
             }
         });
-
         return view;
     }
 }
